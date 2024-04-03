@@ -1,0 +1,18 @@
+{
+  "name": "Meshcore Timeout Test",
+  "shortName": "meshcore_timeout_test",
+  "version": "0.0.1",
+  "author": "Martin Mädler",
+  "description": "Plugin to test setTimeout in Meshcore module.",
+  "hasAdminPanel": false,
+  "homepage": "https://github.com/MartinMa/MeshcoreTimeoutTest",
+  "changelogUrl": "https://raw.githubusercontent.com/MartinMa/MeshcoreTimeoutTest/master/changelog.md",
+  "configUrl": "https://raw.githubusercontent.com/MartinMa/MeshcoreTimeoutTest/master/config.json",
+  "downloadUrl": "https://github.com/MartinMa/MeshcoreTimeoutTest/archive/master.zip",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MartinMa/MeshcoreTimeoutTest.git"
+  },
+  "versionHistoryUrl": "https://api.github.com/repos/MartinMa/MeshcoreTimeoutTest/tags",
+  "meshCentralCompat": ">=1.1.3"
+}
