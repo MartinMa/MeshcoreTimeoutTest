@@ -1,7 +1,7 @@
 {
   "name": "Meshcore Timeout Test",
   "shortName": "meshcore_timeout_test",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Martin Mädler",
   "description": "Plugin to test setTimeout in Meshcore module.",
   "hasAdminPanel": false,
