@@ -40,7 +40,7 @@ function testTimeout(mesh) {
     logToFile('Entered testTimeout function');
     try {
         foo = {
-            success: 'yes',
+            success: 'yes'
         };
         logToFile('Foo: ' + JSON.stringify(foo));
         // Trigger timer to perform custom actions.
