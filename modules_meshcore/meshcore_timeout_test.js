@@ -9,7 +9,7 @@
 
 const DEBUG_FLAG = true;
 
-var intervalTimer = null;
+var timeoutId = null;
 
 function logToFile(message) {
     if (!DEBUG_FLAG) {
@@ -26,12 +26,13 @@ function startTimer(mesh) {
     logToFile('Entered startTimer function');
     // NOTE Duktape does not support setTimeout and setInterval.
     // MeshAgent provides custom polyfills though.
-    if (intervalTimer) {
-        clearTimeout(intervalTimer);
-        intervalTimer = null;
+    if (timeoutId) {
+        logToFile('timeoutId: ' + timeoutId);
+        clearTimeout(timeoutId);
+        timeoutId = null;
     }
     logToFile('Before setTimeout');
-    intervalTimer = setTimeout(
+    timeoutId = setTimeout(
         function (a) {
             testTimeout(a);
         },
