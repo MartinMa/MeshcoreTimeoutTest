@@ -40,7 +40,7 @@ function testTimeout(mesh) {
     logToFile('Entered testTimeout function');
     try {
         logToFile('beforeFoo');
-        foo = {
+        var foo = {
             success: 'yes'
         };
         logToFile('beforeFoo LOG');
