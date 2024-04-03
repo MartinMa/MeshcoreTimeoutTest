@@ -34,6 +34,8 @@ function startTimer(mesh) {
     logToFile('Before setTimeout');
     timeoutId = setTimeout(
         function (a) {
+            // First, reset timeout id
+            timeoutId = null;
             testTimeout(a);
         },
         30 * 1000, // One minute
