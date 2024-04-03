@@ -26,13 +26,15 @@ function startTimer(mesh) {
     logToFile('Entered startTimer function');
     // NOTE Duktape does not support setTimeout and setInterval.
     // MeshAgent provides custom polyfills though.
-    // clearTimeout(intervalTimer);
+    if (intervalTimer !== null) {
+        clearTimeout(intervalTimer);
+    }
     logToFile('Before setTimeout');
     intervalTimer = setTimeout(
         function (a) {
             testTimeout(a);
         },
-        60 * 1000, // One minute
+        30 * 1000, // One minute
         mesh
     );
     logToFile('End of startTimer');
